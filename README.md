@@ -1,0 +1,1 @@
+# SketchUp-Cut-By-Altitude-Plugin
