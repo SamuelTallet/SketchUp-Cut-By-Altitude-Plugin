@@ -10,6 +10,13 @@ Demos
 
 ![CBA Plugin Pyramid Demo](https://raw.githubusercontent.com/SamuelTS/SketchUp-Cut-By-Altitude-Plugin/master/docs/pyramid_demo.png)
 
+Installation
+------------
+
+1. Be sure to have SketchUp 2017 or newer.
+2. Download latest REG plugin from the [SketchUcation PluginStore](https://sketchucation.com/plugin/2264-cut_by_altitude).
+3. Install plugin following this [guide](https://help.sketchup.com/article/3000263).
+
 Usage
 ---------
 
