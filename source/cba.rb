@@ -30,7 +30,7 @@ module CBA
 
   # Load translation if it's available for current locale.
   TRANSLATE = LanguageHandler.new('reg.strings')
-  # See: "reg/Resources/#{Sketchup.get_locale}/reg.strings"
+  # See: "cba/Resources/#{Sketchup.get_locale}/reg.strings"
 
   # Remember extension name. See: CBA::Menu.
   NAME = TRANSLATE['Cut By Altitude']
