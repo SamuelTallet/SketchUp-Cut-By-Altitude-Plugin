@@ -10,6 +10,11 @@ Demos
 
 ![CBA Plugin Pyramid Demo](https://raw.githubusercontent.com/SamuelTS/SketchUp-Cut-By-Altitude-Plugin/master/docs/pyramid_demo.png)
 
+Usage
+---------
+
+In SketchUp, right click on a group then click on "Cut By Altitude". Define parameters then press "OK" button.
+
 Copyright
 ---------
 
