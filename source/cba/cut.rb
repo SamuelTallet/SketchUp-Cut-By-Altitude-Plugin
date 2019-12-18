@@ -28,7 +28,69 @@ module CBA
   # Cutter.
   class Cut
 
-    # Initializes cut by altitude.
+    # Cuts by altitude a group, possibly many times.
+    #
+    # @param [Sketchup::Group] entity Entity to cut.
+    # @raise [ArgumentError]
+    #
+    # @return [nil]
+    def self.do_many_times(entity)
+
+      raise ArgumentError, 'Entity argument must be a Sketchup::Group.'\
+        unless entity.is_a?(Sketchup::Group)
+
+      parameters = UI.inputbox(
+
+        [
+          TRANSLATE['Altitude in meters'] + ' ',
+          TRANSLATE['Cut whole group?']
+        ], # Prompts
+
+        [
+          1,
+          TRANSLATE['Yes']
+        ], # Defaults
+
+        [
+          '', TRANSLATE['Yes'] + '|' + TRANSLATE['No'] 
+        ], # List
+
+        TRANSLATE[NAME] # Title
+
+      )
+
+      # Escapes if user cancelled operation.
+      return if parameters == false
+
+      altitude = parameters[0].to_i
+      base_altitude = altitude
+
+      cut_whole_group = (parameters[1] == TRANSLATE['Yes'])
+
+      entity_bounds = entity.bounds
+      entity_height = (entity_bounds.max.z - entity_bounds.min.z).to_l.to_m.to_i
+
+      many = (entity_height / altitude) - 1
+
+      if cut_whole_group
+
+        many.times do
+
+          self.new(entity, altitude)
+
+          altitude = altitude + base_altitude
+
+        end
+
+      else
+
+        self.new(entity, altitude)
+
+      end
+
+    end
+
+    # Initializes cut by altitude...
     #
     # @param [Sketchup::Group] entity Entity to cut.
     # @param [Integer] altitude Altitude in meters.
@@ -94,7 +156,7 @@ module CBA
 
         Sketchup.status_text = nil
 
-        puts TRANSLATE['Error:'] + ' ' + exception.message
+        puts 'Error: ' + exception.message
         
       end
 

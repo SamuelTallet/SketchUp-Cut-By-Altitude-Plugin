@@ -40,18 +40,7 @@ module CBA
 
           context_menu.add_item('✄ ' + TRANSLATE[NAME]) {
 
-            parameters = UI.inputbox(
-
-              [TRANSLATE['Altitude in meters'] + ' '], # Prompt
-              [1], # Default
-              TRANSLATE[NAME] # Title
-
-            )
-
-            # Escapes if user cancelled operation.
-            return if parameters == false
-
-            Cut.new(selected_entity, parameters[0].to_i)
+            Cut.do_many_times(selected_entity)
 
           }
 

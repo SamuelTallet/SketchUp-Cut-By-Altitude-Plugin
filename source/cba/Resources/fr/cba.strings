@@ -1,0 +1,24 @@
+
+////////////////////////////////////////////
+// Cut By Altitude French Translation.
+//
+// Package: CBA extension for SketchUp
+// Translation author: Samuel Tallet
+////////////////////////////////////////////
+
+//
+// File: cba.rb
+//
+
+"Cut By Altitude"="Découper par altitude";
+"Cut by altitude a SketchUp group."="Découpez par altitude un groupe SketchUp";
+
+//
+// File: cut.rb
+//
+
+"Altitude in meters"="Altitude en mètres";
+"Cut whole group?"="Découper le groupe entier ?";
+"Yes"="Oui";
+"No"="Non";
+"Cut By Altitude is running... Please wait."="Cut By Altitude est en cours d'exécution... Veuillez patienter.";

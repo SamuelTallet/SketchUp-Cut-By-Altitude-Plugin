@@ -26,11 +26,11 @@ require 'extensions'
 # CBA plugin namespace.
 module CBA
 
-  VERSION = '1.0.0'.freeze
+  VERSION = '1.0.1'.freeze
 
   # Load translation if it's available for current locale.
-  TRANSLATE = LanguageHandler.new('reg.strings')
-  # See: "cba/Resources/#{Sketchup.get_locale}/reg.strings"
+  TRANSLATE = LanguageHandler.new('cba.strings')
+  # See: "cba/Resources/#{Sketchup.get_locale}/cba.strings"
 
   # Remember extension name. See: CBA::Menu.
   NAME = TRANSLATE['Cut By Altitude']
