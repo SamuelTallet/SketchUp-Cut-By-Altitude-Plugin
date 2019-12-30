@@ -18,7 +18,14 @@
 //
 
 "Altitude in meters"="Altitude en mètres";
+"Number of cuts"="Nombre de découpages";
+"Cutting direction"="Sens de la découpe";
+"Hide cut lines?"="Masquer les lignes de découpe";
 "Cut whole group?"="Découper le groupe entier ?";
+"Base to top"="De la base vers le sommet";
+"Top to base"="Du sommet vers la base";
+"Middle to base"="Du milieu vers la base";
+"Middle to top"="Du milieu vers le sommet";
 "Yes"="Oui";
 "No"="Non";
 "Cut By Altitude is running... Please wait."="Cut By Altitude est en cours d'exécution... Veuillez patienter.";

@@ -26,7 +26,7 @@ require 'extensions'
 # CBA plugin namespace.
 module CBA
 
-  VERSION = '1.0.1'.freeze
+  VERSION = '1.0.2'.freeze
 
   # Load translation if it's available for current locale.
   TRANSLATE = LanguageHandler.new('cba.strings')
