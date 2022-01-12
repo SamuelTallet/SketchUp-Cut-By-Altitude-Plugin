@@ -1,14 +1,14 @@
 Free cut by altitude plugin for SketchUp
 ========================================
 
-✂️ Cut by altitude a SketchUp group. This allows you, for example, to define precise [Random Zones](https://github.com/SamuelTS/SketchUp-Random-Entity-Generator-Plugin) or to put a snow texture in top of a mountain. See demo below:
+✂️ Cut by altitude a SketchUp group. This allows you, for example, to define precise [Random Zones](https://github.com/SamuelTallet/SketchUp-Random-Entity-Generator-Plugin) or to put a snow texture in top of a mountain. See demo below:
 
 Demos
 -----
 
-![CBA Plugin Island Demo](https://raw.githubusercontent.com/SamuelTS/SketchUp-Cut-By-Altitude-Plugin/master/docs/island_demo.jpg)
+![CBA Plugin Island Demo](https://raw.githubusercontent.com/SamuelTallet/SketchUp-Cut-By-Altitude-Plugin/master/docs/island_demo.jpg)
 
-![CBA Plugin Pyramid Demo](https://raw.githubusercontent.com/SamuelTS/SketchUp-Cut-By-Altitude-Plugin/master/docs/pyramid_demo.png)
+![CBA Plugin Pyramid Demo](https://raw.githubusercontent.com/SamuelTallet/SketchUp-Cut-By-Altitude-Plugin/master/docs/pyramid_demo.png)
 
 Documentation
 -------------
